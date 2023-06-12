@@ -30,7 +30,6 @@ def google():
         }
     )
 
-    # Redirect to google_auth function
     redirect_uri = url_for('google_auth', _external=True)
     print(redirect_uri)
     return oauth.google.authorize_redirect(redirect_uri)
